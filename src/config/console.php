@@ -11,4 +11,7 @@ return [
     'bootstrap' => ['log', 'core'],
     'modules' => $modules,
     'params' => $params,
+    'components' => [
+        'db' => require(__DIR__ . '/db.php'),
+    ]
 ];

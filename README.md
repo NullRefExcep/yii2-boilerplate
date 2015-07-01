@@ -1,5 +1,5 @@
 # Yii2 Boilerplate
-Yet another [Yii 2](http://www.yiiframework.com/) application skeleton =)
+Yet another [Yii2](http://www.yiiframework.com/) application skeleton =)
 
 ## DIRECTORY STRUCTURE
 
