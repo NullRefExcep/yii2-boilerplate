@@ -19,10 +19,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "vlucas/phpdotenv": "~1.0@dev",
         "nullref/yii2-useful": "dev-master",
-        "nullref/yii2-core": "dev-master",
-        "nullref/yii2-product": "dev-master",
         "composer/composer": "~1.0@dev",
-        "bower-asset/startbootstrap-sb-admin-2": "dev-master"
+        "nullref/yii2-product": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
