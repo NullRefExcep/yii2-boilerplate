@@ -5,6 +5,4 @@ $this->title = Yii::$app->name;
 ?>
 <div class="site-index">
     <h1>Hello world</h1>
-    <pre>
-    </pre>
 </div>

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rmrevin/yii2-fontawesome": "^2.11"
+    }
+}
