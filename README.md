@@ -10,3 +10,19 @@ runtime/            contains files generated during runtime
 tests/              contains various tests for the basic application
 web/				the entry script and Web resources
 ```
+
+## REQUIREMENTS
+
+The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+
+## INSTALL
+
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+You can then install this project template using the following command:
+
+```
+php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
+php composer.phar create-project "nullref/yii2-app" --stability=dev
+```
