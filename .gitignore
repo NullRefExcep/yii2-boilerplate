@@ -29,6 +29,3 @@ phpunit.phar
 
 # env vars
 .env
-
-# composer
-composer.lock
