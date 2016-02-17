@@ -23,6 +23,8 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ```
-php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
-php composer.phar create-project "nullref/yii2-app" --stability=dev
+composer global require "fxp/composer-asset-plugin:~1.0.0"
+composer create-project "nullref/yii2-app" --stability=dev
 ```
+
+If you use composer.phar as local file, you have to use commands begin with `php composer.phar`
