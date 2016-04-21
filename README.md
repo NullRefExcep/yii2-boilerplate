@@ -28,3 +28,13 @@ composer create-project "nullref/yii2-app" --stability=dev
 ```
 
 If you use composer.phar as local file, you have to use commands begin with `php composer.phar`
+
+### Usage guide
+
+If you want to add this project to remote repository using PhpStorm, follow next steps
+
+    1. At the end of installing project remove current VCS in composer dialog.
+    2. In PhpStorm -> VCS -> Enable Version Control Integration
+    3. Add all files to git
+    4. VCS -> Commit and Push
+    5. Before Push phase define your repository
