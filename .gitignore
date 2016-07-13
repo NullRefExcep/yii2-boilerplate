@@ -30,5 +30,8 @@ phpunit.phar
 /phpunit.xml
 
 
-# env vars
+# dot.env vars
 .env
+
+# Codeception
+codecept.phar
