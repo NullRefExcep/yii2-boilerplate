@@ -11,12 +11,12 @@ message:
 vendors-update:
 	composer update
 vendors-install:
-	composer install
+	composer install -o
 test:
 	php codecept.phar run
 codecept-download:
 	wget http://codeception.com/codecept.phar
 codecept-bootstrap:
-	php codecept.phar bootstra && php codecept.phar build
+	php codecept.phar bootstrap && php codecept.phar build
 deploy:
 	echo "Not implemented"
