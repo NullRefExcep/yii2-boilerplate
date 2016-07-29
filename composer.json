@@ -38,6 +38,17 @@
         ]
     },
     "extra": {
+        "asset-repositories": [
+            {
+                "type": "bower-git",
+                "url": "https://github.com/adobe-webplatform/eve.git",
+                "name": "bower-asset/eve"
+            }
+        ],
+        "asset-vcs-driver-options": {
+            "github-no-api": true
+        },
+        "asset-pattern-skip-version": "(-build|-patch)",
         "yii\\composer\\Installer::postCreateProject": {
             "setPermission": [
                 {
