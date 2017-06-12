@@ -1,7 +1,9 @@
 serve:
-	yii serve --docroot=@webroot
+	php yii serve --docroot=@webroot --port=8899
 run:
 	make serve
+run-queue:
+	php yii queue/run -v
 fix-permissions:
 	chmod -R 777 runtime/ web/assets/
 db-update:
@@ -10,6 +12,8 @@ db-migrate:
 	make db-update
 db-create:
 	mysql -u root -p -e 'CREATE SCHEMA $(db-name) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;'
+db-recreate:
+	php yii core/migrate/down 1000 && php yii core/migrate
 env:
 	(cp .env.example .env) && (nano .env)
 message:
