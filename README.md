@@ -23,8 +23,11 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ```
-composer global require "fxp/composer-asset-plugin:~1.1.1"
-composer create-project "nullref/yii2-app" --stability=dev
+composer global require "hirak/prestissimo:~0.3.5"
+composer global require "fxp/composer-asset-plugin:~1.3.0"
+composer create-project "nullref/yii2-app" --stability=dev %PROJECT_NAME%
+php yii env
+php yii modules/install nullref/yii2-full-admin
 ```
 
 If you use composer.phar as local file, you have to use commands begin with `php composer.phar`

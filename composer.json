@@ -35,9 +35,7 @@
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject",
-            "cp .env.example .env",
-            "php yii env",
-            "php yii modules/install nullref/yii2-full-admin"
+            "cp .env.example .env"
         ]
     },
     "extra": {
