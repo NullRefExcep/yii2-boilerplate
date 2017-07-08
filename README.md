@@ -25,7 +25,7 @@ You can then install this project template using the following command:
 ```
 composer global require "hirak/prestissimo"
 composer global require "fxp/composer-asset-plugin:~1.1.1"
-composer create-project "nullref/yii2-app" --stability=dev
+composer create-project "nullref/yii2-app" --stability=dev --prefer-dist
 ```
 
 If you use composer.phar as local file, you have to use commands begin with `php composer.phar`
