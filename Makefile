@@ -19,9 +19,9 @@ env:
 message:
 	php yii message src/messages/config.php
 vendors-update:
-	composer update
+	composer update --prefer-dist
 vendors-install:
-	composer install -o
+	composer install -o --prefer-dist --ignore-platform-reqs
 composer-download:
 	(curl -sS https://getcomposer.org/installer | php) && (mv composer.phar /usr/local/bin/composer) && (composer global require "fxp/composer-asset-plugin:^1.2.0")
 test:
