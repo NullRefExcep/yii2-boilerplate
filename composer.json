@@ -14,13 +14,13 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.4",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
+        "yiisoft/yii2": ">=2.0.13",
+        "yiisoft/yii2-bootstrap": "^2.0",
+        "yiisoft/yii2-swiftmailer": "^2.0",
         "vlucas/phpdotenv": "~1.0@dev",
-        "nullref/yii2-useful": "dev-master",
-        "nullref/yii2-core": "dev-master",
-        "nullref/yii2-admin": "dev-master"
+        "nullref/yii2-useful": ">=0.0.4",
+        "nullref/yii2-core": ">=0.0.3",
+        "nullref/yii2-admin": ">=0.0.2"
     },
     "require-dev": {
         "codeception/codeception": "^2.2",
@@ -28,8 +28,18 @@
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "sort-packages": true,
+        "fxp-asset": {
+            "enabled": false
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -38,17 +48,6 @@
         ]
     },
     "extra": {
-        "asset-repositories": [
-            {
-                "type": "bower-git",
-                "url": "https://github.com/adobe-webplatform/eve.git",
-                "name": "bower-asset/eve"
-            }
-        ],
-        "asset-vcs-driver-options": {
-            "github-no-api": true
-        },
-        "asset-pattern-skip-version": "(-build|-patch)",
         "yii\\composer\\Installer::postCreateProject": {
             "setPermission": [
                 {
@@ -60,10 +59,6 @@
             "generateCookieValidationKey": [
                 "src/config/web.php"
             ]
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
         }
     }
 }

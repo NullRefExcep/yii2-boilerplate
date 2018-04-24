@@ -11,6 +11,7 @@ defined('YII_ENV') or define('YII_ENV', getenv('YII_ENV'));
 defined('YII_MAIL_USE_FILE_TRANSPORT') or define('YII_MAIL_USE_FILE_TRANSPORT', getenv('YII_MAIL_USE_FILE_TRANSPORT') == 'true');
 
 require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
+require(__DIR__ . '/../src/components/WebApplication.php');
 
 $config = require(__DIR__ . '/../src/config/web.php');
-(new yii\web\Application($config))->run();
+(new \app\components\WebApplication($config))->run();

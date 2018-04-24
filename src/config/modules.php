@@ -1,6 +1,6 @@
 <?php
 
 return array_merge(require(__DIR__ . '/installed_modules.php'), [
-   'core' => ['class' => 'nullref\core\Module'],
-   'admin' => ['class' => 'nullref\admin\Module'],
+    'core' => ['class' => \nullref\core\Module::class],
+    'admin' => ['class' => \nullref\admin\Module::class],
 ]);
