@@ -24,7 +24,8 @@ You can then install this project template using the following command:
 
 ```
 composer global require "hirak/prestissimo"
-composer global require "fxp/composer-asset-plugin:~1.1.1"
+```
+```
 composer create-project "nullref/yii2-app" --stability=dev --prefer-dist
 ```
 
