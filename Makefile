@@ -1,11 +1,11 @@
 serve:
-	php yii serve --docroot=@webroot
+	php yii serve --docroot=@webroot --port=8899
 run:
 	make serve
 fix-permissions:
 	chmod -R 777 runtime/ web/assets/
 db-update:
-	php yii core/migrate
+	php yii modules-migrate
 db-migrate:
 	make db-update
 db-create:
