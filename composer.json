@@ -13,22 +13,29 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.4",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
+        "php": ">=5.5.0",
+        "yiisoft/yii2": ">=2.0.13",
+        "yiisoft/yii2-bootstrap": "^2.0",
+        "yiisoft/yii2-swiftmailer": "^2.0",
         "vlucas/phpdotenv": "~1.0@dev",
-        "nullref/yii2-useful": "dev-master",
-        "nullref/yii2-core": "dev-master",
+        "nullref/yii2-useful": ">=0.0.4",
+        "nullref/yii2-core": ">=0.0.3",
+        "nullref/yii2-admin": ">=0.0.2"
         "nullref/yii2-full-admin": "dev-master",
         "yiisoft/yii2-shell": "^2.0"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
+        "codeception/codeception": "^2.2",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "config": {
         "process-timeout": 1800,
         "sort-packages": true,

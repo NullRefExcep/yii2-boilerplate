@@ -3,7 +3,6 @@
 $params = require(__DIR__ . '/params.php');
 $modules = require(__DIR__ . '/modules.php');
 
-Yii::setAlias('@webroot', dirname(dirname(__DIR__)) . '/web');
 
 return [
     'id' => 'console-app',
@@ -13,6 +12,11 @@ return [
     'bootstrap' => ['log', 'core'],
     'modules' => $modules,
     'params' => $params,
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm' => '@vendor/npm-asset',
+        '@webroot' => dirname(dirname(__DIR__)) . '/web',
+    ],
     'components' => [
         'db' => require(__DIR__ . '/db.php'),
     ]

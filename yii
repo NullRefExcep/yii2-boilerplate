@@ -8,6 +8,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
+defined('YII_CLI') or define('YII_CLI', true);
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 // fcgi doesn't have STDIN and STDOUT defined by default

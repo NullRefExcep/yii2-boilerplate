@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use Yii;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 
@@ -13,7 +12,7 @@ class SiteController extends Controller
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'logout' => ['post'],
                 ],
