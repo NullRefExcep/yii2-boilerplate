@@ -25,7 +25,7 @@ You can then install this project template using the following command:
 ```
 composer global require "hirak/prestissimo:~0.3.5"
 composer global require "fxp/composer-asset-plugin:~1.3.0"
-composer create-project "nullref/yii2-app:dev-full" --stability=dev %PROJECT_NAME%
+composer create-project "nullref/yii2-app" --stability=dev %PROJECT_NAME%
 cd %PROJECT_NAME%
 php yii env
 php yii module/install nullref/yii2-full-admin

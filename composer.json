@@ -20,7 +20,7 @@
         "vlucas/phpdotenv": "~1.0@dev",
         "nullref/yii2-useful": ">=0.0.4",
         "nullref/yii2-core": ">=0.0.3",
-        "nullref/yii2-admin": ">=0.0.2"
+        "nullref/yii2-admin": ">=0.0.2",
         "nullref/yii2-full-admin": "dev-master",
         "yiisoft/yii2-shell": "^2.0"
     },
