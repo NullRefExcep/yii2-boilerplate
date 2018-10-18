@@ -4,12 +4,15 @@
     "keywords": ["yii2", "framework", "project template"],
     "type": "project",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Karpovych",
+            "email": "ZAYEC77@gmail.com"
+        }
+    ],
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/NullRefExcep/yii2-boilerplate/issues",
+        "source": "https://github.com/NullRefExcep/yii2-boilerplate"
     },
     "minimum-stability": "dev",
     "require": {
