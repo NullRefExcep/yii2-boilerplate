@@ -28,7 +28,7 @@ composer global require "fxp/composer-asset-plugin:~1.3.0"
 composer create-project "nullref/yii2-app:dev-full" --stability=dev %PROJECT_NAME%
 cd %PROJECT_NAME%
 php yii env
-php yii modules/install nullref/yii2-full-admin
+php yii module/install nullref/yii2-full-admin
 ```
 
 If you use composer.phar as local file, you have to use commands begin with `php composer.phar`
