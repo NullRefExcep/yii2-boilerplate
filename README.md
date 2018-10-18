@@ -1,5 +1,10 @@
 # Yii2 Boilerplate
-Yet another [Yii2](http://www.yiiframework.com/) application skeleton =)
+Yet another [Yii2](http://www.yiiframework.com/) application skeleton )
+
+[![Latest Stable Version](https://poser.pugx.org/nullref/yii2-app/v/stable)](https://packagist.org/packages/nullref/yii2-app) 
+[![Total Downloads](https://poser.pugx.org/nullref/yii2-app/downloads)](https://packagist.org/packages/nullref/yii2-app) 
+[![Latest Unstable Version](https://poser.pugx.org/nullref/yii2-app/v/unstable)](https://packagist.org/packages/nullref/yii2-app) 
+[![License](https://poser.pugx.org/nullref/yii2-app/license)](https://packagist.org/packages/nullref/yii2-app)
 
 ## DIRECTORY STRUCTURE
 
