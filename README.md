@@ -14,6 +14,8 @@ vendors				3rd-party packages
 runtime/            contains files generated during runtime
 tests/              contains various tests for the basic application
 web/				the entry script and Web resources
+infracture/			the infrastructure folder (docker/docker-compose setup)
+bin/			    scripts
 ```
 
 ## REQUIREMENTS

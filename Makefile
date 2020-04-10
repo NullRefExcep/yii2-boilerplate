@@ -1,3 +1,5 @@
+-include ./.env
+export
 serve:
 	php yii serve --docroot=@webroot --port=8899
 run:
@@ -32,3 +34,27 @@ codecept-bootstrap:
 	php codecept.phar bootstrap && php codecept.phar build
 deploy:
 	echo "Not implemented"
+
+# Infra
+infra-up:
+	cd infracture && make up
+infra-start:
+	cd infracture && make start
+infra-stop:
+	cd infracture && make stop
+infra-down:
+	cd infracture && make down
+infra-rm:
+	cd infracture && make rm
+infra-logs:
+	cd infracture && make logs
+
+# Server
+server-ssh:
+	sh ./bin/server-tools.sh ssh
+server-deploy:
+	sh ./bin/server-tools.sh deploy
+server-logs:
+	sh ./bin/server-tools.sh logs
+server-sync:
+	sh ./bin/server-tools.sh sync

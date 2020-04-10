@@ -1,0 +1,56 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx:1.13.3
+    ports:
+      - ${HTTP_HOST}:80
+    depends_on:
+      - php
+    links:
+      - php
+    volumes:
+      - ./..:/var/www/app
+      - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./conf/nginx/conf.d:/etc/nginx/conf.d
+    restart: always
+    logging:
+        options:
+            max-size: 1m
+  php:
+    image: zayec77/php
+    volumes:
+      - ./..:/var/www/app
+      - ./data/php/composer:/root/.composer/
+      - ./conf/php/php.ini:/usr/local/etc/php/php.ini
+      - ./conf/php/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./conf/php/php-fpm.d:/usr/local/etc/php-fpm.d
+    working_dir: /var/www/app
+    links:
+      - mysql
+      - redis
+    restart: always
+    logging:
+      options:
+        max-size: 1m
+  mysql:
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    restart: always
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    logging:
+        options:
+            max-size: 1m
+  redis:
+    image: redis
+    restart: always
+    logging:
+        options:
+            max-size: 1m
+
