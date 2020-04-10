@@ -6,8 +6,9 @@ $components = require(__DIR__ . '/components.php');
 $bootstrap = require(__DIR__ . '/bootstrap.php');
 
 $config = [
-    'id' => 'app',
-    'name' => 'Application',
+    'id' => getenv('APP_ID') ? getenv('APP_ID') : 'app',
+    'name' => getenv('APP_NAME') ? getenv('APP_NAME') : 'Application',
+    'language' => getenv('APP_LANGUAGE'),
     'basePath' => dirname(__DIR__),
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'runtimePath' => dirname(dirname(__DIR__)) . '/runtime',
