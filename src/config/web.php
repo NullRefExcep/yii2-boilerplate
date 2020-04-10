@@ -2,6 +2,8 @@
 
 $params = require(__DIR__ . '/params.php');
 $modules = require(__DIR__ . '/modules.php');
+$components = require(__DIR__ . '/components.php');
+$bootstrap = require(__DIR__ . '/bootstrap.php');
 
 $config = [
     'id' => 'app',
@@ -9,12 +11,12 @@ $config = [
     'basePath' => dirname(__DIR__),
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'runtimePath' => dirname(dirname(__DIR__)) . '/runtime',
-    'bootstrap' => ['log'],
+    'bootstrap' => array_merge($bootstrap, []),
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
     ],
-    'components' => [
+    'components' => array_merge($components, [
         'formatter' => [
             'class' => 'app\components\Formatter',
         ],
@@ -53,8 +55,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
-        'db' => require(__DIR__ . '/db.php'),
-    ],
+    ]),
     'modules' => $modules,
     'params' => $params,
 ];

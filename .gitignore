@@ -18,8 +18,6 @@ vendor
 # composer itself is not needed
 composer.phar
 
-# composer install
-composer.lock
 
 # Mac DS_Store Files
 .DS_Store
@@ -30,8 +28,13 @@ phpunit.phar
 /phpunit.xml
 
 
-# dot.env vars
+# env vars
 .env
+
+tests/_output/*
 
 # Codeception
 codecept.phar
+
+
+src/config/changes.php
