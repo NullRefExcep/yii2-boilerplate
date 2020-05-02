@@ -40,6 +40,7 @@ services:
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_ROOT_HOST: '%'
     volumes:
       - ./data/mysql:/var/lib/mysql
     restart: always
