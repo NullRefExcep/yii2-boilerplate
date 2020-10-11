@@ -50,8 +50,8 @@ infra-logs:
 	cd infracture && make logs
 infra-db-migrate:
 	cd infracture && make db-migrate
-infra-bash-php-web:
-	cd infracture && make bash-php-web
+infra-bash-php:
+	cd infracture && make bash-php
 
 # Server
 server-ssh:
