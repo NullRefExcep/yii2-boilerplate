@@ -41,7 +41,7 @@ restart-ngnix:
 restart-php:
 	docker-compose restart php
 restart-php-queue:
-	docker-compose -p supermart restart php-queue
+	docker-compose restart php-queue
 restart-mysql:
 	docker-compose restart mysql
 rebuild-up:
