@@ -49,10 +49,19 @@ rebuild-up:
 kill:
 	docker-compose kill
 
+# Logs
 logs:
 	docker-compose logs -f
 logs-php-queue:
 	docker-compose logs -f php-queue
+
+# Yii
+db-migrate:
+	docker-compose exec php-web php yii modules-migrate
+
+# Redis
+redis-flush-all:
+	docker-compose exec redis redis-cli FLUSHALL
 
 # Bash
 bash-nginx:
